@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.danig_000.cartera.Consulta_Cobra">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CONSULTAR COBRADOR"
+        android:id="@+id/tvtitulo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#42fef1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CEDULA:"
+        android:id="@+id/tvced"
+        android:layout_below="@+id/tvtitulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp"
+        android:textColor="#3e3e3e"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jlcedulas"
+        android:layout_alignTop="@+id/tvced"
+        android:layout_toRightOf="@+id/tvced"
+        android:choiceMode="singleChoice"
+        android:layout_above="@+id/tvresul"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONSULTAR"
+        android:id="@+id/btconsu"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="#474747"
+        android:gravity="center"
+        android:background="#c8c6c6"
+        android:layout_alignBottom="@+id/jlcedulas"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO"
+        android:id="@+id/tvresul"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#3e3e3e"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/edresultado"
+        android:layout_below="@+id/tvresul"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/btvolver"
+        android:textColor="#0a0a0a"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLVER"
+        android:id="@+id/btvolver"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="#474747"
+        android:gravity="center"
+        android:background="#c8c6c6" />
+
+</RelativeLayout>

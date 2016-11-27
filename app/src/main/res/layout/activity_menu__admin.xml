@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.danig_000.cartera.Menu_Admin">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="MENU ADMINISTRADOR"
+        android:id="@+id/tvtitulo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2be2fa"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:foregroundGravity="center"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TASAS"
+        android:id="@+id/bttasas"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#868686"
+        android:background="#dcdada"
+        android:layout_below="@+id/tvtitulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="PasarRegistrarTasa" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CLIENTES"
+        android:id="@+id/btcliente"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#868686"
+        android:background="#dbdada"
+        android:layout_below="@+id/bttasas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="COBRADORES"
+        android:id="@+id/btcobra"
+        android:layout_below="@+id/btcliente"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#868686"
+        android:background="#d5d4d4"
+        android:layout_marginTop="8dp"
+        android:onClick="PasarMenuCobrador" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="PAGOS"
+        android:id="@+id/btpagos"
+        android:layout_below="@+id/btcobra"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#868686"
+        android:background="#dbdada"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="PRESTAMOS"
+        android:id="@+id/btpresta"
+        android:layout_below="@+id/btpagos"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#868686"
+        android:background="#dbdada"
+        android:layout_marginTop="8dp"
+        android:onClick="PasarRegistroPrestammo" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="REPORTES"
+        android:id="@+id/btreporte"
+        android:layout_below="@+id/btpresta"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#868686"
+        android:background="#dddbdb"
+        android:layout_marginTop="8dp"
+        android:onClick="PasarReporte" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CERRAR SESION"
+        android:id="@+id/btcerrar"
+        android:background="#d9d9d9"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textColor="#747474"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_below="@+id/btreporte"
+        android:layout_centerHorizontal="true"
+        android:onClick="CerrarMenuAdmin"
+        android:layout_marginTop="8dp" />/>
+</RelativeLayout>

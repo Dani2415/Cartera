@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.danig_000.cartera">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Inicio_Cobra" />
+        <activity android:name=".Inicio_Admin" />
+        <activity android:name=".Registro_Admin" />
+        <activity android:name=".Menu_Admin" />
+        <activity android:name=".Registro_Tasa" />
+        <activity android:name=".Menu_Cobradores" />
+        <activity android:name=".Registro_Cobra" />
+        <activity android:name=".Consulta_Cobra" />
+        <activity android:name=".Actualizar_Cobra" />
+        <activity android:name=".Inhabilitar_Cobra" />
+        <activity android:name=".Menu_Reportes" />
+        <activity android:name=".Regitro_Prestamo"></activity>
+    </application>
+
+</manifest>

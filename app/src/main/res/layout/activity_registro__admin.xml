@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.danig_000.cartera.Registro_Admin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO ADMINISTRADOR"
+        android:id="@+id/tvtitulo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#1be7f6"
+        android:textStyle="bold"
+        android:textSize="22dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout5"
+        android:layout_below="@+id/tvtitulo">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOMBRE:"
+                android:id="@+id/tvnom"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#747272" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/ednom"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:textColor="#0e0d0d"
+                android:layout_below="@+id/tvtitulo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APELLIDO:"
+                android:id="@+id/tvapell"
+                android:textColor="#888686"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_alignBottom="@+id/ednom"
+                android:layout_alignLeft="@+id/tvtitulo"
+                android:layout_alignStart="@+id/tvtitulo" />
+
+            <EditText
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edapell"
+                android:layout_below="@+id/tvapell"
+                android:layout_alignRight="@+id/tvtitulo"
+                android:layout_alignEnd="@+id/tvtitulo"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:textColor="#0e0d0d"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CEDULA:"
+                android:id="@+id/tvced"
+                android:textColor="#888686"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_alignBottom="@+id/ednom"
+                android:layout_alignLeft="@+id/tvtitulo"
+                android:layout_alignStart="@+id/tvtitulo" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edcedu"
+                android:layout_below="@+id/tvced"
+                android:layout_alignLeft="@+id/ednom"
+                android:layout_alignStart="@+id/ednom"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:textColor="#0e0d0d"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-MAIL:"
+                android:id="@+id/tvcorreo"
+                android:textColor="#888686"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_alignBottom="@+id/ednom"
+                android:layout_alignLeft="@+id/tvtitulo"
+                android:layout_alignStart="@+id/tvtitulo" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edcorreo"
+                android:layout_below="@+id/tvcorreo"
+                android:layout_alignLeft="@+id/edcedu"
+                android:layout_alignStart="@+id/edcedu"
+                android:layout_alignRight="@+id/edcedu"
+                android:layout_alignEnd="@+id/edcedu"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:textColor="#0e0d0d"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONTRASEÑA:"
+            android:id="@+id/tvcontr"
+            android:layout_below="@+id/edcorreo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#888686"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/edcontra"
+            android:layout_below="@+id/tvcontr"
+            android:layout_alignLeft="@+id/edcorreo"
+            android:layout_alignStart="@+id/edcorreo"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:textColor="#0e0d0d" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR CONTRASEÑA:"
+            android:id="@+id/tvcontra2"
+            android:layout_below="@+id/edcontra"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#888686"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/edcontra2"
+            android:layout_below="@+id/tvcontra2"
+            android:layout_alignLeft="@+id/edcontra"
+            android:layout_alignStart="@+id/edcontra"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:textColor="#0e0d0d" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:weightSum="1"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GUARDAR"
+            android:id="@+id/btguardar"
+            android:layout_weight="0.56"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#717171"
+            android:background="#cfcece"
+            android:layout_marginRight="8dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOLVER"
+            android:id="@+id/btvolv"
+            android:layout_weight="0.49"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#717171"
+            android:background="#cfcece"
+            android:onClick="VolverMenuAdmin" />
+    </LinearLayout>
+
+</RelativeLayout>

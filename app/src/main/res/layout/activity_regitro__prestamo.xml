@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.danig_000.cartera.Regitro_Prestamo">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO PRESTAMO"
+        android:id="@+id/tvtitulo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#47e0fb"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CODIGO:"
+        android:id="@+id/tvcod"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="#5b5a5a"
+        android:layout_below="@+id/tvtitulo" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edcod"
+        android:textColor="#080808"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        android:layout_alignTop="@+id/tvcod"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANTIDAD CUOTAS:"
+        android:id="@+id/tvcuiota"
+        android:layout_below="@+id/edcod"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="#5b5a5a" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edcuota"
+        android:textColor="#080808"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/edcod"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VALOR:"
+        android:id="@+id/tvvalor"
+        android:layout_below="@+id/edcuota"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="#5b5a5a" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edvalor"
+        android:textColor="#080808"
+        android:textSize="19dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/edcuota"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TASA:"
+        android:id="@+id/tvtasa"
+        android:layout_below="@+id/edvalor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:textColor="#5b5a5a" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandableListView2"
+        android:layout_below="@+id/edvalor"
+        android:layout_toRightOf="@+id/tvtasa"
+        android:layout_toEndOf="@+id/tvtasa"
+        android:layout_above="@+id/tvcliente" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CEDULA CLIENTE:"
+        android:id="@+id/tvcliente"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:textColor="#5b5a5a"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="91dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SALDO:"
+        android:id="@+id/tvsaldo"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="46dp"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="#4b4a4a" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edsaldo"
+        android:layout_alignTop="@+id/tvsaldo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/expandableListView2"
+        android:layout_alignEnd="@+id/expandableListView2"
+        android:textStyle="normal"
+        android:textSize="19dp"
+        android:textColor="#060606" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout4">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="GUARDAR"
+            android:id="@+id/btguarda"
+            android:textColor="#6a6969"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#bcbcbc"
+            android:layout_marginRight="8dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="CANCELAR"
+            android:id="@+id/btcancel"
+            android:textColor="#6a6969"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#bcbcbc"
+            android:onClick="RprestamoVolverMAdmin" />
+    </LinearLayout>
+
+</RelativeLayout>
